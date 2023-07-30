@@ -1,0 +1,26 @@
+@import "src/assets/style/variables";
+@import "src/assets/style/mixin";
+.L-edit-todo-wrapper{
+  align-items: center;
+  .L-edit-todo-input{
+    border: 1px solid $grey-base;
+    width: 70%;
+    padding-left:7px;
+
+  }
+  p{
+    width: 105px;
+    word-break: break-word;
+  }
+  .L-edit-btn , .L-edit-btn-edit{
+    width: 25px;
+    height: 25px;
+    font-family: Webdings;
+    padding: 0 5px;
+    margin: 0 5px;
+    color: $white;
+  }
+  .L-edit-btn-edit{
+    margin-left:  40px;
+  }
+}

@@ -1,0 +1,33 @@
+@import "src/assets/style/variables";
+@import "src/assets/style/mixin";
+
+.L-todos-list {
+  .L-todo-item {
+    background-color: $white;
+    width: 250px;
+    min-height: 70px;
+    border: 1px solid $grey-base;
+    margin: 10px;
+    padding: 15px 20px;
+    .L-todo-title{
+      font-size: 16px;
+      color: $grey-base;
+    }
+    .L-checked-todo-title{
+      text-decoration: line-through;
+      color: $green-dark;
+      font-weight: bolder;
+    }
+    .L-delete-todo {
+      background-color: transparent;
+      color: $red-dark;
+      font-size: 20px;
+      font-weight: bolder;
+
+      &:hover {
+        color: $black;
+        transition: $transition;
+      }
+    }
+  }
+}

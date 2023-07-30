@@ -1,0 +1,62 @@
+@import "src/assets/style/variables";
+@import "src/assets/style/mixin";
+
+.L-add-todo {
+  margin: 15px 0;
+  @include screen-max-width-576 {
+    flex-wrap: wrap;
+  }
+
+  input {
+    width: 300px;
+    border: 1px solid $grey-base;
+    padding: 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+
+    &::placeholder {
+      text-transform: uppercase;
+    }
+  }
+
+
+  .L-add-btns {
+    @include screen-max-width-576 {
+      margin-top: 25px;
+    }
+    .L-input-button{
+      width: 100px;
+      border-radius: 5px;
+      height: 50px;
+      color: $white;
+      margin:  0 5px;
+      @include screen-max-width-767 {
+        height: 40px;
+        margin:   5px;
+      }
+    }
+
+
+    .L-add-btn-check {
+      background-color: $green-dark;
+      &:hover {
+        background-color: $grey-base;
+      }
+    }
+
+    .L-add-btn-unCheck {
+      background-color: $yellow;
+      &:hover {
+        background-color: $grey-base;
+      }
+    }
+    .L-add-btn-delete {
+      background-color: $black;
+      color: $white;
+      &:hover {
+        background-color: $red-dark;
+      }
+    }
+  }
+
+}

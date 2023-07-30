@@ -1,0 +1,36 @@
+@import "variables";
+
+@mixin screen-max-width-1600 {
+  @media (max-width : $max-width-1600 ) {
+    @content;
+  }
+}
+
+@mixin screen-max-width-1300 {
+  @media (max-width : $max-width-1300 ) {
+    @content;
+  }
+}
+
+
+@mixin screen-max-width-1024 {
+  @media (max-width : $max-width-1024) {
+    @content;
+  }
+}
+
+
+@mixin screen-max-width-767 {
+  @media (max-width : $max-width-767) {
+    @content;
+  }
+}
+
+@mixin screen-max-width-576{
+  @media (max-width : $max-width-576) {
+    @content;
+  }
+}
+
+
+

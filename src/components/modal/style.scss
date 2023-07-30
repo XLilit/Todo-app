@@ -1,0 +1,48 @@
+@import "src/assets/style/variables";
+@import "src/assets/style/mixin";
+
+.L-modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+
+  .L-modal-content {
+    padding: 20px;
+    border-radius: 12px;
+    background-color: $white;
+    height: 150px;
+    width: 400px;
+    p{
+      text-align: center;
+      font-size: 18px;
+      color: $grey-base;
+    }
+    .L-modal-btn{
+      button{
+        margin-top: 35px;
+        width: 120px;
+        height: 35px;
+        background-color: $red-dark;
+        border-radius: 5px;
+        color: $white;
+        &:hover{
+          transition: $transition;
+          background-color: $grey-base;
+          color: $white;
+        }
+
+      }
+    }
+  }
+}
+
+.L-active-modal {
+  transform: scale(1);
+}
